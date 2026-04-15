@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GDGoC Web Summit 2026</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header id="header">
+    <div class="container header-inner">
+      <div class="logo">GDGoC<span>WebDev</span></div>
+      <nav id="nav">
+        <a href="#about">Tentang</a>
+        <a href="#rundown">Rundown</a>
+        <a href="#speakers">Pembicara</a>
+        <a href="#faq">FAQ</a>
+        <a href="#register" class="nav-cta">Daftar</a>
+      </nav>
+      <button class="hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- MOBILE NAV -->
+  <div class="mobile-nav hidden" id="mobileNav">
+    <a href="#about" onclick="closeNav()">Tentang</a>
+    <a href="#rundown" onclick="closeNav()">Rundown</a>
+    <a href="#speakers" onclick="closeNav()">Pembicara</a>
+    <a href="#faq" onclick="closeNav()">FAQ</a>
+    <a href="#register" onclick="closeNav()">Daftar</a>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <div class="hero-tag">15 April 2026 &mdash; Jember, Jawa Timur</div>
+      <h1>GDGoC Web<br/><span>Summit 2026</span></h1>
+      <p>Konferensi web development terbesar di Jember. Satu hari penuh belajar, networking, dan berkarya bersama para developer dan desainer terbaik.</p>
+      <div class="hero-buttons">
+        <a href="#register" class="btn-primary">Daftar Sekarang</a>
+        <a href="#about" class="btn-secondary">Pelajari Lebih</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <strong>500+</strong>
+          <span>Peserta</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <strong>12</strong>
+          <span>Pembicara</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <strong>8</strong>
+          <span>Sesi Materi</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <strong>Gratis</strong>
+          <span>Untuk Mahasiswa</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-label">Tentang Event</div>
+      <h2>Apa itu GDGoC Web Summit?</h2>
+      <p class="section-desc">GDGoC Web Summit adalah konferensi tahunan yang diselenggarakan oleh Google Developer Groups on Campus Jember. Event ini dirancang khusus untuk mahasiswa dan pemula yang ingin terjun ke dunia web development secara serius.</p>
+      <div class="about-cards">
+        <div class="about-card">
+          <div class="about-card-icon">01</div>
+          <h3>Tanggal & Waktu</h3>
+          <p>Rabu, 15 April 2026<br/>08.00 &ndash; 17.00 WIB</p>
+        </div>
+        <div class="about-card">
+          <div class="about-card-icon">02</div>
+          <h3>Lokasi</h3>
+          <p>Gedung Soetardjo<br/>Universitas Jember, Lt. 3</p>
+        </div>
+        <div class="about-card">
+          <div class="about-card-icon">03</div>
+          <h3>Kapasitas</h3>
+          <p>Terbatas untuk<br/>500 peserta saja</p>
+        </div>
+        <div class="about-card">
+          <div class="about-card-icon">04</div>
+          <h3>Fasilitas</h3>
+          <p>Sertifikat, snack,<br/>merchandise & goodie bag</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RUNDOWN -->
+  <section id="rundown" class="section section-alt">
+    <div class="container">
+      <div class="section-label">Jadwal Acara</div>
+      <h2>Rundown Kegiatan</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-time">07.30</div>
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h4>Registrasi & Check-in</h4>
+            <p>Peserta datang, ambil name tag dan goodie bag</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-time">08.00</div>
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h4>Opening Ceremony</h4>
+            <p>Sambutan dari ketua GDGoC dan perwakilan universitas</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-time">08.30</div>
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h4>Keynote: The Future of Web</h4>
+            <p>Tren web development 2026 dan ke mana industri ini menuju</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-time">10.00</div>
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h4>Sesi 1 — HTML & CSS Modern</h4>
+            <p>Deep dive ke fitur-fitur CSS terbaru yang wajib kamu tahu</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-time">11.30</div>
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h4>Sesi 2 — JavaScript & DOM</h4>
+            <p>Dari dasar sampai manipulasi DOM yang efisien</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-time">12.30</div>
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h4>Ishoma</h4>
+            <p>Istirahat, sholat, dan makan siang bersama</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-time">13.30</div>
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h4>Sesi 3 — Intro to React</h4>
+            <p>Kenalan dengan framework paling populer saat ini</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-time">15.00</div>
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h4>Workshop: Build Your First Website</h4>
+            <p>Praktek langsung membuat mini website dari nol</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-time">16.30</div>
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h4>Closing & Networking</h4>
+            <p>Pengumuman doorprize, foto bersama, dan sesi networking</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SPEAKERS -->
+  <section id="speakers" class="section">
+    <div class="container">
+      <div class="section-label">Pembicara</div>
+      <h2>Siapa yang Akan Hadir?</h2>
+      <div class="speakers-grid">
+        <div class="speaker-card">
+          <div class="speaker-avatar">AR</div>
+          <h4>Alhaura Rahmadina</h4>
+          <span>Frontend Engineer @ Google</span>
+          <p>Spesialis React dan Web Performance dengan pengalaman 6 tahun di industri teknologi</p>
+        </div>
+        <div class="speaker-card">
+          <div class="speaker-avatar">BW</div>
+          <h4>Bagas Wicaksono</h4>
+          <span>Full Stack Developer @ Tokopedia</span>
+          <p>Membangun sistem skala besar dengan lebih dari 10 juta pengguna aktif per hari</p>
+        </div>
+        <div class="speaker-card">
+          <div class="speaker-avatar">DS</div>
+          <h4>Dinda Saraswati</h4>
+          <span>UI/UX Engineer @ Gojek</span>
+          <p>Menjembatani dunia desain dan development untuk pengalaman pengguna yang optimal</p>
+        </div>
+        <div class="speaker-card">
+          <div class="speaker-avatar">RP</div>
+          <h4>Rizky Pratama</h4>
+          <span>Tech Lead @ Ruangguru</span>
+          <p>Memimpin tim engineering yang membangun platform edukasi terbesar di Indonesia</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="section section-alt">
+    <div class="container">
+      <div class="section-label">FAQ</div>
+      <h2>Pertanyaan yang Sering Ditanya</h2>
+      <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            Apakah event ini gratis?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Ya, sepenuhnya gratis untuk mahasiswa aktif. Cukup daftar dan bawa kartu mahasiswa saat hari H.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            Apakah harus punya pengalaman coding dulu?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Tidak harus. Event ini terbuka untuk semua level, dari yang belum pernah coding sama sekali sampai yang sudah berpengalaman.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            Apa saja yang perlu dibawa?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Laptop, charger, kartu mahasiswa, dan semangat belajar. Untuk sesi workshop pastikan laptop kamu sudah terinstall VS Code.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            Apakah ada sertifikat?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Ya, semua peserta yang hadir akan mendapatkan e-sertifikat yang dikirim ke email maksimal 3 hari setelah acara.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            Bagaimana cara mengikuti workshop?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Workshop otomatis diikuti oleh semua peserta yang terdaftar. Tidak ada pendaftaran terpisah untuk sesi workshop.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- REGISTER -->
+  <section id="register" class="section">
+    <div class="container">
+      <div class="section-label">Pendaftaran</div>
+      <h2>Daftarkan Dirimu Sekarang</h2>
+      <p class="section-desc">Isi formulir di bawah dengan data yang benar. Konfirmasi pendaftaran akan dikirim ke email kamu.</p>
+      <div class="form-wrapper">
+        <div class="form-left">
+          <div class="form-info-item">
+            <strong>Deadline Pendaftaran</strong>
+            <span>12 April 2026, 23.59 WIB</span>
+          </div>
+          <div class="form-info-item">
+            <strong>Kuota Tersisa</strong>
+            <span id="kuota">247 tempat</span>
+          </div>
+          <div class="form-info-item">
+            <strong>Konfirmasi Via</strong>
+            <span>Email & WhatsApp</span>
+          </div>
+          <div class="form-info-item">
+            <strong>Dresscode</strong>
+            <span>Smart casual, hindari warna hitam polos</span>
+          </div>
+        </div>
+        <div class="form-right">
+          <div class="form-group">
+            <label>Nama Lengkap <span class="required">*</span></label>
+            <input type="text" id="nama" placeholder="Sesuai KTM" />
+          </div>
+          <div class="form-group">
+            <label>Email Aktif <span class="required">*</span></label>
+            <input type="email" id="email" placeholder="email@contoh.com" />
+          </div>
+          <div class="form-group">
+            <label>Nomor WhatsApp <span class="required">*</span></label>
+            <input type="text" id="wa" placeholder="08xxxxxxxxxx" />
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label>Fakultas <span class="required">*</span></label>
+              <select id="fakultas">
+                <option value="">Pilih Fakultas</option>
+                <option>Teknik</option>
+                <option>MIPA</option>
+                <option>Ekonomi & Bisnis</option>
+                <option>Hukum</option>
+                <option>Ilmu Sosial & Politik</option>
+                <option>Pertanian</option>
+                <option>Lainnya</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Angkatan <span class="required">*</span></label>
+              <select id="angkatan">
+                <option value="">Pilih Angkatan</option>
+                <option>2024</option>
+                <option>2023</option>
+                <option>2022</option>
+                <option>2021</option>
+                <option>2020 ke atas</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Pengalaman Web Dev</label>
+            <select id="exp">
+              <option value="">Pilih Level</option>
+              <option>Pemula — belum pernah sama sekali</option>
+              <option>Dasar — sudah tahu sedikit HTML/CSS</option>
+              <option>Menengah — sudah pernah buat website</option>
+              <option>Mahir — sudah pakai framework</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Dari mana kamu tahu event ini?</label>
+            <select id="source">
+              <option value="">Pilih sumber</option>
+              <option>Instagram GDGoC</option>
+              <option>Teman / kenalan</option>
+              <option>Poster di kampus</option>
+              <option>WhatsApp grup</option>
+              <option>Lainnya</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Pertanyaan atau harapan kamu (opsional)</label>
+            <textarea id="pesan" placeholder="Tulis di sini..."></textarea>
+          </div>
+          <button class="btn-primary full-width" onclick="daftar()">Kirim Pendaftaran</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- POPUP -->
+  <div id="popup" class="popup hidden">
+    <div class="popup-box">
+      <div class="popup-check">&#10003;</div>
+      <h3>Pendaftaran Berhasil!</h3>
+      <p id="popup-msg"></p>
+      <button onclick="tutupPopup()">Tutup</button>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <div class="logo">GDGoC<span>WebDev</span></div>
+        <p>Konferensi web development tahunan untuk mahasiswa Indonesia.</p>
+      </div>
+      <div class="footer-links">
+        <strong>Navigasi</strong>
+        <a href="#about">Tentang</a>
+        <a href="#rundown">Rundown</a>
+        <a href="#speakers">Pembicara</a>
+        <a href="#faq">FAQ</a>
+        <a href="#register">Daftar</a>
+      </div>
+      <div class="footer-links">
+        <strong>Kontak</strong>
+        <a href="#">Instagram @gdgoc.unej</a>
+        <a href="#">gdgoc@unej.ac.id</a>
+        <a href="#">WhatsApp Panitia</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>2026 GDGoC Web Development &mdash; Universitas Jember</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
